@@ -36,6 +36,8 @@ Then, obtain your token:
   
 ```
 
+Notices that you will have to use the gs:// protocol, therefore you will also have to store your file at the Google Cloud storage. See the section on that at the end of this article.
+
 curl -s -k -H "Content-Type: application/json" \
     -H "Authorization: Bearer access_token" \
     https://speech.googleapis.com/v1beta1/speech:syncrecognize \
@@ -68,4 +70,26 @@ However, this have not worked.
 ## Other notes
 
 * You may also see yourself in trouble if you use larger flac files. Their service may ask you to work in asynchronous mode — please patch this article if you find how to work with that.
+
+## Storing your file in google storage
+
+See https://cloud.google.com/storage/docs/gsutil to get the SDK going in your system and also the other Google services setup. 
+
+* Create a bucket
+* Add permissions to a remote bucket and associate your account "email" id
+
+### Check console 
+
+You may also need to check things on web and directly using their interfaces, so check the following resources: 
+
+* https://console.cloud.google.com/storage/browser
+* https://cloud.google.com/storage/docs/quickstart-console
+
+### Authenticate for using gsutil
+
+* https://cloud.google.com/storage/docs/gsutil_install#authenticate
+* You may need to see this https://cloud.google.com/storage/docs/authentication 
+
+
+
 
