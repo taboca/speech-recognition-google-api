@@ -8,11 +8,25 @@ Then you will have to set the service to work as a service, i.e. to enable you t
 
 *  https://cloud.google.com/speech/docs/common/auth#set_up_a_service_account 
 
+## Check your authenticated local users 
+
+```
+ gcloud auth list
+```
+
+You will see a list of options if you have more than one account. You can pick the account you want, the one associated with the bucket you have permissions: 
+
+```
+gcloud config set account _email_@_account_dot_com_
+```
+
+
 ## Get your authentication key
 
 Using the JSON file that you have exported using the above tools.
 
 * gcloud auth activate-service-account --key-file=service-account-key-file
+
 
 Then, obtain your token: 
 
