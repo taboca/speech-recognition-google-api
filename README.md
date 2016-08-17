@@ -52,10 +52,14 @@ Then, obtain your token:
 
 Notices that you will have to use the gs:// protocol, therefore you will also have to store your file at the Google Cloud storage. See the section on that at the end of this article.
 
+* Notices that you have to replace **access_token** in the following command: 
+
+```
 curl -s -k -H "Content-Type: application/json" \
     -H "Authorization: Bearer access_token" \
     https://speech.googleapis.com/v1beta1/speech:syncrecognize \
     -d @sync-request.json
+```
 
 ## FLAC audio requirements 
 
