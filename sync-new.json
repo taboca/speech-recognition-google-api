@@ -1,0 +1,11 @@
+{
+  "config": {
+      "encoding":"FLAC",
+      "language_code":"pt-BR",
+      "sample_rate": 16000
+  },
+  "audio": {
+      "uri":"gs://marcio-api/test-mono-file-16k.flac"
+  }
+}
+  
