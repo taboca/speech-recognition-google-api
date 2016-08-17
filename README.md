@@ -61,6 +61,24 @@ curl -s -k -H "Content-Type: application/json" \
     -d @sync-request.json
 ```
 
+Expect to see results such as
+
+```
+{
+  "results": [
+    {
+      "alternatives": [
+        {
+          "transcript": "este é um teste de conversão de áudio",
+          "confidence": 0.96772814
+        }
+      ]
+    }
+  ]
+}
+```
+
+
 ## FLAC audio requirements 
 
 References: 
