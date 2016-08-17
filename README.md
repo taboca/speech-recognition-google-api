@@ -78,12 +78,24 @@ See https://cloud.google.com/storage/docs/gsutil to get the SDK going in your sy
 * Create a bucket
 * Add permissions to a remote bucket and associate your account "email" id
 
+In my case I have created a bucket entitled as follows: 
+
+```
+marcio-api
+```
+
 ### Check console 
 
 You may also need to check things on web and directly using their interfaces, so check the following resources: 
 
 * https://console.cloud.google.com/storage/browser
 * https://cloud.google.com/storage/docs/quickstart-console
+
+When you have gsutil working, copy your local mono flac file to your gs account
+
+```
+gsutil cp novo-mono.flac gs://marcio-api
+```
 
 ### Authenticate for using gsutil
 
